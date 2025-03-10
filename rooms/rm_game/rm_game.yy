@@ -1,17 +1,18 @@
 {
   "$GMRoom":"v1",
-  "%Name":"Room1",
+  "%Name":"rm_game",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_17156B4","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_F4020BA","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_5413A81","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_4EB574AF","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_77AF379","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_3482C8F1","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_17156B4","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_F4020BA","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_5413A81","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_4EB574AF","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_77AF379","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_3482C8F1","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_59E83434","path":"rooms/rm_game/rm_game.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -22,6 +23,7 @@
         {"$GMRInstance":"v1","%Name":"inst_4EB574AF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4EB574AF","objectId":{"name":"obj_speed_y","path":"objects/obj_speed_y/obj_speed_y.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.31111118,"scaleY":0.31111118,"x":254.01953,"y":2133.5195,},
         {"$GMRInstance":"v1","%Name":"inst_77AF379","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_77AF379","objectId":{"name":"obj_torque","path":"objects/obj_torque/obj_torque.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.31111118,"scaleY":0.31111118,"x":269.0,"y":2133.0,},
         {"$GMRInstance":"v1","%Name":"inst_3482C8F1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3482C8F1","objectId":{"name":"obj_round","path":"objects/obj_round/obj_round.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.3138889,"scaleY":0.3138889,"x":284.25,"y":2133.125,},
+        {"$GMRInstance":"v1","%Name":"inst_59E83434","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_59E83434","objectId":{"name":"obj_distance","path":"objects/obj_distance/obj_distance.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":640.0,"y":2230.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":false,"effectType":"_filter_clouds","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[
         {"name":"g_CloudScale","type":0,"value":"64",},
@@ -42,7 +44,7 @@
         {"name":"g_CloudTexture","type":2,"value":"_filter_clouds_texture",},
       ],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":true,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
-  "name":"Room1",
+  "name":"rm_game",
   "parent":{
     "name":"Cenas",
     "path":"folders/Cenas.yy",

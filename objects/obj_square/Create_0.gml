@@ -15,9 +15,9 @@ phy_linear_velocity_y = vel_y;
 phy_angular_velocity = random_range(-60, 60);
 
 // 🟡 INICIALIZAÇÃO DAS VARIÁVEIS PARA CONTAR DISTÂNCIA
-distance_traveled = 0;          // Distância total percorrida
-previous_x = phy_position_x;    // Posição X anterior
-previous_y = phy_position_y;    // Posição Y anterior
-frame_counter = 0;              // Contador de frames para controle
+//distance_traveled = 0;          // Distância total percorrida
+//previous_x = phy_position_x;    // Posição X anterior
+//previous_y = phy_position_y;    // Posição Y anterior
+//frame_counter = 0;              // Contador de frames para controle
 // 🟡 ESCALA DE DISTÂNCIA (Ajuste conforme desejado)
 // Quanto maior, mais lento a distância sobe

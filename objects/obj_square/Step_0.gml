@@ -45,7 +45,7 @@ if (!instance_exists(obj_ground_1) && !instance_exists(obj_ground_2)&& !instance
 
 // 🟡 3. CÁLCULO DE DISTÂNCIA PERCORRIDA COM FÍSICA
 // Calcula a distância somente se estiver em movimento
-if (phy_speed > 0.0001) {
+/*if (phy_speed > 0.0001) {
     var dx = phy_position_x - previous_x;
     var dy = phy_position_y - previous_y;
     var distance = sqrt(dx * dx + dy * dy);
@@ -58,5 +58,5 @@ if (phy_speed > 0.0001) {
 previous_x = phy_position_x;
 previous_y = phy_position_y;
 
-
+*/
 physics_world_update_iterations(100)

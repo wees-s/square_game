@@ -1,0 +1,1 @@
+sprite_index = spr_play; // Muda o sprite ao passar o mouse
