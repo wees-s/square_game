@@ -8,8 +8,6 @@ Você é um quadrado e tem poderes. O seu objetivo é chegar o mais longe possí
 • Ainda em desenvolvimento.
 • Alguns sprites e funções que estão nesse repositório podem não estar em uso (ainda fazendo testes).
 
-![final](https://github.com/user-attachments/assets/2a3fbb8f-368d-4b89-a96e-05b0f31249ac)
-
 ATUALMENTE:
 - 4 Poderes inclusos:
    • Acelerar, Girar, Virar Círculo, Voar.
@@ -32,3 +30,4 @@ Bugs corrigidos:
 • Corrigido bug de animações que estavam fora de quadro.
 • Corrigido um erro que resetava a pontuação quando o personagem trocava de forma.
 • Menu corrigido, agora ao voltar ao menu após o jogo ser interrompido é possível voltar ao jogo novamente.
+![final](https://github.com/user-attachments/assets/2a3fbb8f-368d-4b89-a96e-05b0f31249ac)
