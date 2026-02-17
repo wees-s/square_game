@@ -1,8 +1,8 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"Curso_aula1",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -35,11 +35,14 @@
     {"$GMFolder":"","%Name":"power_effects","folderPath":"folders/Sprites/power_effects.yy","name":"power_effects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"powers","folderPath":"folders/Sprites/powers.yy","name":"powers","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.gm_filter_clouds-1.0.0","name":"io.gamemaker.gm_filter_clouds-1.0.0","path":"io.gamemaker.gm_filter_clouds-1.0.0.yyp",},
+  ],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.14.3.217",
   },
   "name":"Curso_aula1",
   "resources":[
@@ -47,6 +50,7 @@
     {"id":{"name":"fnt_lower","path":"fonts/fnt_lower/fnt_lower.yy",},},
     {"id":{"name":"fnt_numbers_1","path":"fonts/fnt_numbers_1/fnt_numbers_1.yy",},},
     {"id":{"name":"fnt_numbers","path":"fonts/fnt_numbers/fnt_numbers.yy",},},
+    {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},
     {"id":{"name":"obj_boom","path":"objects/obj_boom/obj_boom.yy",},},
     {"id":{"name":"obj_circle_power","path":"objects/obj_circle_power/obj_circle_power.yy",},},
     {"id":{"name":"obj_circle","path":"objects/obj_circle/obj_circle.yy",},},
@@ -83,6 +87,7 @@
     {"id":{"name":"snd_spin","path":"sounds/snd_spin/snd_spin.yy",},},
     {"id":{"name":"snd_theme","path":"sounds/snd_theme/snd_theme.yy",},},
     {"id":{"name":"Sound11","path":"sounds/Sound11/Sound11.yy",},},
+    {"id":{"name":"block","path":"sprites/block/block.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
     {"id":{"name":"spr_boom","path":"sprites/spr_boom/spr_boom.yy",},},
     {"id":{"name":"spr_circle_power","path":"sprites/spr_circle_power/spr_circle_power.yy",},},

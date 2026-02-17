@@ -1,3 +1,19 @@
+// Câmera
+base_cam_w = 1366;
+base_cam_h = 768;
+
+// Zoom
+min_zoom = 0.9;
+max_zoom = 1.8;
+zoom_lerp = 0.06;
+current_zoom = 1;
+
+// Distância
+previous_x = phy_position_x;
+previous_y = phy_position_y;
+distance_traveled = 0;
+
+
 // 🎵 Toca o som de disparo
 audio_play_sound(snd_abstract, 0, true);
 

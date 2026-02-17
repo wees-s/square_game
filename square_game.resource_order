@@ -8,6 +8,7 @@
   "ResourceOrderSettings":[
     {"name":"fnt_lower","order":1,"path":"fonts/fnt_lower/fnt_lower.yy",},
     {"name":"fnt_numbers_1","order":2,"path":"fonts/fnt_numbers_1/fnt_numbers_1.yy",},
+    {"name":"obj_block","order":4,"path":"objects/obj_block/obj_block.yy",},
     {"name":"obj_circle_power","order":4,"path":"objects/obj_circle_power/obj_circle_power.yy",},
     {"name":"obj_circle","order":2,"path":"objects/obj_circle/obj_circle.yy",},
     {"name":"obj_distance","order":6,"path":"objects/obj_distance/obj_distance.yy",},
@@ -25,6 +26,7 @@
     {"name":"rm_menu","order":1,"path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"snd_fast_fast","order":1,"path":"sounds/snd_fast_fast/snd_fast_fast.yy",},
     {"name":"Sound11","order":2,"path":"sounds/Sound11/Sound11.yy",},
+    {"name":"block","order":3,"path":"sprites/block/block.yy",},
     {"name":"spr_boom","order":3,"path":"sprites/spr_boom/spr_boom.yy",},
     {"name":"spr_circle_power","order":4,"path":"sprites/spr_circle_power/spr_circle_power.yy",},
     {"name":"spr_circle","order":4,"path":"sprites/spr_circle/spr_circle.yy",},
