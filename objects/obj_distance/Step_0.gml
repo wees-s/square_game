@@ -37,6 +37,27 @@ if (distance_traveled == ultima_distancia) {
 // Atualiza a última distância verificada
 ultima_distancia = distance_traveled;
 
+//explosão
+if (tempo_inativo > 2  && instance_exists(obj_explosion_button) && object_exists(obj_explosion_button))
+{
+	instance_destroy(obj_explosion_button);
+	if (instance_exists(obj_square)) with (obj_square) {
+		obj_square.phy_speed_y = -5;
+		obj_square.phy_speed_x += 8;
+		audio_play_sound(snd_explosion, 0,false);
+	}
+	if (instance_exists(obj_circle)) with (obj_circle) {
+		obj_circle.phy_speed_y = -5;
+		obj_circle.phy_speed_x += 8;
+		audio_play_sound(snd_explosion, 0,false);
+	}
+	if (instance_exists(obj_square_1)) with (obj_square_1) {
+		obj_square_1.phy_speed_y = -5;
+		obj_square_1.phy_speed_x += 8;
+		audio_play_sound(snd_explosion, 0,false);
+	}
+}
+
 // Se atingir o tempo limite, reinicia o jogo completamente
 if (tempo_inativo >= tempo_limite) {
     ini_open("recorde.ini");

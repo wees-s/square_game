@@ -36,5 +36,5 @@
     "path":"sprites/spr_fast/spr_fast.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

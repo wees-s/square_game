@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_circle_power",
+  "%Name":"obj_explosion_button",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_circle_power",
+  "name":"obj_explosion_button",
   "overriddenProperties":[],
   "parent":{
-    "name":"power_effects",
-    "path":"folders/Objetos/power_effects.yy",
+    "name":"buttons",
+    "path":"folders/Objetos/buttons.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_circle_power",
-    "path":"sprites/spr_circle_power/spr_circle_power.yy",
+    "name":"spr_explosion_button",
+    "path":"sprites/spr_explosion_button/spr_explosion_button.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

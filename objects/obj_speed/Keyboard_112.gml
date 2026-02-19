@@ -28,4 +28,3 @@ if (instance_exists(obj_square_1)) with (obj_square_1) {
 
 
 
-

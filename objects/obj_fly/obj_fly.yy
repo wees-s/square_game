@@ -36,5 +36,5 @@
     "path":"sprites/spr_fly/spr_fly.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

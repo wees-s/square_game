@@ -1,3 +1,30 @@
+cam_offset_x = 0;
+cam_shake_x  = 0;
+cam_shake_y  = 0;
+cam_x        = x;
+cam_y        = y;
+current_zoom = 1;
+
+// Controle de inatividade
+tempo_limite     = 0;
+tempo_inativo    = 0;
+ultima_distancia = 0;
+
+// Distância
+distance_traveled = 0;
+posicao_anterior_x = x;
+
+// Câmera (caso esteja aí ainda)
+cam_offset_x = 0;
+cam_shake_x  = 0;
+cam_shake_y  = 0;
+current_zoom = 1;
+
+
+cam_speed_offset = 0;
+
+velocidade_suave = 0;
+
 sprite_index = spr_circle;
 image_angle = 0;
 image_xscale = 1;

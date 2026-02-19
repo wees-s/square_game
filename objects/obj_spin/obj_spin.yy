@@ -36,5 +36,5 @@
     "path":"sprites/spr_spin/spr_spin.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
