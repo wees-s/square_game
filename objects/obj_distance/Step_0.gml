@@ -2,9 +2,18 @@
 cam_x = camera_get_view_x(view_camera[0]);
 cam_y = camera_get_view_y(view_camera[0]);
 
+var cam_h = camera_get_view_height(view_camera[0]);
+
+//var margem_inferior = 1000;
+//var max_cam_y = room_height - cam_h - margem_inferior;
+//max_cam_y = max(0, max_cam_y);
+
+//cam_y = clamp(cam_y, 0, max_cam_y);
+
 // Mantém o objeto sempre no centro da câmera
 x = cam_x + camera_get_view_width(view_camera[0]) / 2;
-y = cam_y + camera_get_view_height(view_camera[0]) / 2;
+y = cam_y + cam_h / 2;
+
 
 // Calcula a distância percorrida
 var deslocamento = abs(x - posicao_anterior_x);
@@ -45,16 +54,19 @@ if (tempo_inativo > 2  && instance_exists(obj_explosion_button) && object_exists
 		obj_square.phy_speed_y = -5;
 		obj_square.phy_speed_x += 8;
 		audio_play_sound(snd_explosion, 0,false);
+		audio_play_sound(snd_second_chance, 0,false);
 	}
 	if (instance_exists(obj_circle)) with (obj_circle) {
 		obj_circle.phy_speed_y = -5;
 		obj_circle.phy_speed_x += 8;
 		audio_play_sound(snd_explosion, 0,false);
+		audio_play_sound(snd_second_chance, 0,false);
 	}
 	if (instance_exists(obj_square_1)) with (obj_square_1) {
 		obj_square_1.phy_speed_y = -5;
 		obj_square_1.phy_speed_x += 8;
 		audio_play_sound(snd_explosion, 0,false);
+		audio_play_sound(snd_second_chance, 0,false);
 	}
 }
 

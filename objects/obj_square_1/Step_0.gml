@@ -78,14 +78,10 @@ if (
         obj_ground_2,
         obj_ground_speed
     );
-
-    while (1)
-    {
-        instance_create_depth(cam_a, ground_y, depth, ground_object);
-        instance_create_depth(cam_a, ground_y, depth, ground_object);
-        instance_create_depth(cam_a, ground_y, depth, ground_object);
-        instance_create_depth(cam_a, ground_y, depth, ground_object);
-    }
+	if (ground_object == obj_ground_1){
+		instance_create_depth(cam_a, ground_y, depth, ground_object);
+		instance_create_depth(cam_a, ground_y, depth, obj_ground_1_1);
+	}
 }
 else {
     var last_tile_x = -1;
@@ -105,12 +101,18 @@ else {
             obj_ground_fly,
             obj_ground_spin
         );
-        instance_create_depth(
-            last_tile_x + ground_width,
-            ground_y,
-            depth,
-            ground_object
-        );
+		if (ground_object == obj_ground_1)
+		{
+			instance_create_depth(last_tile_x + ground_width, ground_y, depth, ground_object);
+			instance_create_depth(last_tile_x + ground_width, ground_y, depth, obj_ground_1_1);
+		}
+		else if (ground_object == obj_ground_2)
+		{
+			instance_create_depth(last_tile_x + ground_width, ground_y, depth, ground_object);
+			instance_create_depth(last_tile_x + ground_width, ground_y, depth, obj_ground_2_1);
+		}
+		else
+			instance_create_depth(last_tile_x + ground_width, ground_y, depth, ground_object);
     }
 }
 
@@ -139,6 +141,41 @@ previous_y = phy_position_y;
 
 // OBS: valor alto demais pode custar performance
 physics_world_update_iterations(100);
+
+
+// se caiu abaixo do limite
+if (phy_position_y > portal_y_limit)
+{
+    // posição no topo da câmera
+    var cam_top = camera_get_view_y(view_camera[0]);
+    var cam_left = camera_get_view_x(view_camera[0]);
+    var cam_w = camera_get_view_width(view_camera[0]);
+
+    // reposiciona o player (ligeiramente à frente)
+    phy_position_x = cam_left + cam_w * 0.25;
+    phy_position_y = cam_top - 700;
+
+    // velocidade forte em 45 graus pra baixo (frente)
+	var launch_speed = 100;
+	var angle = 45; // diagonal pra baixo e pra frente
+
+	physics_apply_impulse(
+	    phy_position_x,
+	    phy_position_y,
+	    lengthdir_x(launch_speed, angle),
+	    lengthdir_y(launch_speed, angle)
+	);
+    // reset de offset da câmera pra não dar tranco
+    cam_speed_offset = 0;
+	obj_square_1.phy_speed_x += 8;
+    // SOM / FX (opcional)
+    audio_play_sound(snd_explosion, 0, false);
+	audio_play_sound(snd_glitch, 0, false);
+
+	portal_text_timer = portal_text_time;
+
+    // aqui depois você pode disparar HUD: "SECRET PORTAL"
+}
 
 
 /*/ =====================================================

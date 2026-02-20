@@ -22,5 +22,5 @@ draw_sprite_ext(
 );
 draw_set_color(c_black);
 draw_set_font(fnt_lower);
-draw_text(display_get_gui_width() - 1085, 50, "AUTO");
+draw_text(display_get_gui_width() - 1092, 50, "AUTO");
 draw_text(display_get_gui_width() - 1094, 10, "BOOM");

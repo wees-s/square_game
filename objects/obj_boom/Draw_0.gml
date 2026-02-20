@@ -1,4 +1,4 @@
-// Define a posição do botão relativamente à câmera
+/*/ Define a posição do botão relativamente à câmera
 var cam_x = camera_get_view_x(view_camera[0]); // Posição X da câmera
 var cam_y = camera_get_view_y(view_camera[0]); // Posição Y da câmera
 

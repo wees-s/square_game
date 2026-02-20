@@ -1,3 +1,35 @@
+// =====================================================
+// SECRET PORTAL HUD
+// =====================================================
+portal_text_timer = 0;
+portal_text_time  = 200;
+
+
+
+
+portal_cooldown = 0;
+// =====================================================
+// PORTAL
+// =====================================================
+portal_y_limit  = room_height + 200; // limite abaixo do mapa
+portal_cooldown = 0;
+
+// =====================================================
+// CÂMERA
+// =====================================================
+base_cam_w = camera_get_view_width(view_camera[0]);
+base_cam_h = camera_get_view_height(view_camera[0]);
+
+current_zoom     = 1;
+cam_speed_offset = 0;
+
+// =====================================================
+// DISTÂNCIA
+// =====================================================
+previous_x = phy_position_x;
+previous_y = phy_position_y;
+distance_traveled = 0;
+
 // Controle de inatividade
 tempo_limite     = 0;
 tempo_inativo    = 0;
